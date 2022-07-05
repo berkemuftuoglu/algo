@@ -38,7 +38,8 @@ void moveElemToEnd(vector<int>& nums, int n) {
     for (;j < nums.size(); j++) {
             nums[j] = n;
     }
-}
+}  
+
 
 
 };
