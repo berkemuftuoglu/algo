@@ -32,7 +32,38 @@ void moveElemToEnd(vector<int>& nums, int n) {
     for (;j < nums.size(); j++) {
             nums[j] = n;
     }
-}  
+}
+
+/*
+Muliply a vector with itself
+*/
+vector<int> productExceptSelf(vector<int>& nums) {
+    int n = nums.size();
+    int left = 1, right = 1;
+    vector<int> result(n, 1);
+        
+    for(int i = 0; i<n; i++){
+        result[i] *= left;
+        result[n-1-i] *= right;
+        left *= nums[i];
+        right *= nums[n-1-i];
+    }
+        
+    return result;
+}
+
+/*
+Add an element o a unordered map
+*/
+void addToMap(unordered_map<int, int>& m, int key, int val) {
+    if (m.find(key) == m.end()) {
+        m[key] = val;
+    } else {
+        m[key] += val;
+    } 
+}
+
+
 
 
 
