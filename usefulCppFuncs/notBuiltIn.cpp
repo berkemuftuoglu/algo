@@ -1,11 +1,5 @@
-/*
-COUNT()
-count the numbers in an array
-*/
-#include <algorithm>
-#include <vector>
-#include <iostream>
-#include <set>
+#include <imports.h>
+
 using namespace std;
 
 class Functions{

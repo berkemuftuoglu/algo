@@ -16,6 +16,8 @@
         "string_view": "cpp",
         "tuple": "cpp",
         "variant": "cpp",
-        "__functional_03": "cpp"
+        "__functional_03": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp"
     }
 }
