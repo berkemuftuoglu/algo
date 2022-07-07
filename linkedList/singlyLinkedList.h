@@ -4,8 +4,6 @@
 class SinglyLinkedList{
 private:
     SinglyListNode *head;
-    
-
 public:
     SinglyLinkedList() {
         head = NULL;

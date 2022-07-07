@@ -47,4 +47,6 @@ vector<int> productExceptSelf(vector<int>& nums) {
         
     return result;
 }
+
+
 };

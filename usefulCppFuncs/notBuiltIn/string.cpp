@@ -1,22 +1,19 @@
 #include <imports.h>
 
-class string {
+using namespace std;
+
+class stringFuncs {
 public:
 /*
 Find if two strings are isomorphic, outside the box thinking.
 */
 bool isIsomorphic(string s, string t) {
-    //hash tables for characters from our strings
-    int sind[129] = {0}, tind[129] = {0};
-      
-  for(int i = 0; i < s.size(); i++){
-    //if previous characters have different position
-    if(sind[s[i]] != tind[t[i]]){
-        return false;
-    }
-    //put last position of characters
-    sind[s[i]] = tind[t[i]] = i+1;                       
-    }
-      return true;
+        int m1[129] = {0}, m2[129] = {0}, n = s.size();
+        for (int i = 0; i < n; ++i) {
+            if (m1[s[i]] != m2[t[i]]) return false;
+            m1[s[i]] = i + 1;
+            m2[t[i]] = i + 1;
+        }
+        return true;
 }
 };
