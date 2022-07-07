@@ -20,6 +20,7 @@
 #include <sstream>
 #include <bitset>
 #include <utility>
+#include <string>
 
 
 using namespace std;

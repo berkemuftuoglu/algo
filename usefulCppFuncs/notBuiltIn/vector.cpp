@@ -1,10 +1,7 @@
 #include <imports.h>
 
-using namespace std;
-
-class Functions{
+class Vector{
 public:
-
 //size of an array
 int sizeOfAnArray(int *arr){
     size_t res = sizeof(arr)/sizeof(*arr);
@@ -50,21 +47,4 @@ vector<int> productExceptSelf(vector<int>& nums) {
         
     return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 };
