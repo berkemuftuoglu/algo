@@ -18,6 +18,8 @@
         "variant": "cpp",
         "__functional_03": "cpp",
         "iosfwd": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "*.keepme": "cpp",
+        "iostream": "cpp"
     }
 }

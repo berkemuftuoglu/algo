@@ -95,7 +95,7 @@ public:
             ans.push_back(ans.back()->next);
         return ans[ans.size() / 2];
     }
-    
+
     SinglyListNode* middleNode2(SinglyListNode* head) {
         SinglyListNode *slow = head, *fast = head;
         while (fast != NULL && fast->next != NULL) {
@@ -104,6 +104,8 @@ public:
         }
         return slow;
     }
+
+    
 
 
 
