@@ -20,17 +20,14 @@ void swapExample(){
     swap(a,b);
 }
 /*
-Permutate a vector
+? operator
 */
-vector<vector<int>> permute(vector<int>& nums) {
-    vector<vector<int>> ans;
-        
-    sort(nums.begin(), nums.end());
-    do {
-        ans.push_back(nums);
-    } while(next_permutation(nums.begin(), nums.end())); 
-    return ans;
+void questionOperator(){
+    int a = 5, b = 10;
+    cout << (a > b ? "TRUE" : "FALSE") << endl;
 }
+
+
 
 
 

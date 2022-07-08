@@ -103,7 +103,22 @@ public:
         return slow;
     }
 
-    
+    /*
+    Merge two sorted linked lists and return it as a new list. RECURSIVE
+    */
+    SinglyListNode* mergeTwoLists(SinglyListNode* l1, SinglyListNode* l2) {
+        if(l1==NULL || l2==NULL)
+            return l1>l2 ? l1 : l2;
+        
+        SinglyListNode* head=(l1->val<l2->val) ? l1 : l2;
+        head->next = mergeTwoLists(head == l1 ? l1->next : l1, head==l2 ? l2->next :l2);
+        return head;
+    }    
+
+    /*
+    Kruskal's algorithm to find minimum spanning tree of a graph.
+    */
+
 
 
 
