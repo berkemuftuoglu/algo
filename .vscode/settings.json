@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "__bit_reference": "cpp",
+        "__node_handle": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "memory": "cpp",
+        "__mutex_base": "cpp",
+        "array": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp",
+        "__functional_03": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "*.keepme": "cpp",
+        "iostream": "cpp"
+    }
+}
