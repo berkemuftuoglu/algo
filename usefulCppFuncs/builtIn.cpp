@@ -48,6 +48,20 @@ void stoiExample(){
     cout << x << endl;
 }
 
+/*
+stable_partition() 
+rearranges the elements according to the given predicate, if true theey are moved to the left
+*/
+void stable_partition_example(){
+    vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    stable_partition(v.begin(), v.end(), [](int i){return i % 2 == 0;});
+    for (auto i : v) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+
 
 };
 

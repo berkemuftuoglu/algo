@@ -79,7 +79,19 @@ vector<vector<int>> findIntervals(vector<int>& nums) {
     return res;
 }
 
-
+/*
+return if there is a subarrya that adds up to zero
+*/
+bool zeroSumSubarray(vector<int>& arr) {
+    unordered_map<int, int> prefix_sum_counts = {{0,1}};
+    int prefix_sum = 0, count = 0;
+  
+    for (int x : arr) {
+        prefix_sum += x;
+        count += prefix_sum_counts[prefix_sum]++;
+    }
+    return count;
+}
 
 
 
