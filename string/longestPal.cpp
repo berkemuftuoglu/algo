@@ -1,7 +1,5 @@
-
 #include "imports.h"
 
-using namespace std;
 
 
 int expandAroundCenter(string s, int left, int right) {

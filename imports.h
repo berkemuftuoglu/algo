@@ -21,6 +21,7 @@
 #include <bitset>
 #include <utility>
 #include <string>
+#include <cctype>
 
 
 using namespace std;
